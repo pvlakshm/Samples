@@ -18,12 +18,18 @@ namespace SimpleMath.AddTests
             Assert.AreEqual<int>(9, i);
         }
 
-
         [TestMethod()]
         public void addTest2()
         {
             var i = new SimpleMath.Add().add(4, 5);
             Assert.AreEqual<int>(9, i);
+        }
+
+        [TestMethod()]
+        public void addTest3()
+        {
+            var i = new SimpleMath.Add().add(0, 0);
+            Assert.AreEqual<int>(0, i);
         }
     }
 }
