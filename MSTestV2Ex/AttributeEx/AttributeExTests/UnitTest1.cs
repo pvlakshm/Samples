@@ -9,11 +9,13 @@ namespace AttributeExTests
     {
         [TestMethod]
         [SmokeTest]
+        [Note("External dependencies!")]
         public void TestMethod1()
         {
         }
 
         [TestMethod]
+        [Note("External dependencies!")]
         public void TestMethod2()
         {
         }
