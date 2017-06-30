@@ -9,18 +9,20 @@ namespace AttributeExTests
     {
         [TestMethod]
         [SmokeTest]
-        [Note("External dependencies!")]
+        [Note("No external dependencies!")]
         public void TestMethod1()
         {
         }
 
         [TestMethod]
-        [Note("External dependencies!")]
+        [Note("CPU intensive")]
         public void TestMethod2()
         {
         }
 
         [TestMethod]
+        [Note("CPU intensive")]
+        [Note("Memory intensive")]
         public void TestMethod3()
         {
         }
