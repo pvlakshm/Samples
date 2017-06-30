@@ -18,3 +18,7 @@
 /.vs
 /IntelliTest
 /SimpleMath/SimpleMath/obj/Release
+/MSTestV2Ex/AttributeEx/AttributeEx/.vs/AttributeEx/v15
+/MSTestV2Ex/AttributeEx/AttributeEx/obj/Debug
+/MSTestV2Ex/AttributeEx/AttributeEx/packages
+/MSTestV2Ex/AttributeEx/AttributeExTests/obj/Debug
