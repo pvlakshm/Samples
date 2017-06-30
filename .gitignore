@@ -15,3 +15,6 @@
 /SimpleMath/SimpleMath/bin/Debug
 /SimpleMath/.vs/SimpleMath/v15/.suo
 *.ide
+/.vs
+/IntelliTest
+/SimpleMath/SimpleMath/obj/Release
