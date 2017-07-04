@@ -1,7 +1,6 @@
 IntelliTest sample showing the following:
  - checking whether the code under test had testability issues
  - generating a compact suite with high coverage
- - If you make a change in the code under test and rerun IntelliTest on it, you cana see the test code automatically evolved.
 
 This is a .NET Framework app modelling some taxation functionality.
 the folder ```Models``` represents some entities from the domain - like, an employee, the house (s)he is living in, the location of the house, and a couple of exceptions that can be raised.
