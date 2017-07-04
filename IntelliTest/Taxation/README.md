@@ -1,4 +1,4 @@
-IntelliTest sample showing the following:
+IntelliTest sample "Taxation" showing the following:
  - checking whether the code under test had testability issues
  - generating a compact suite with high coverage
 
