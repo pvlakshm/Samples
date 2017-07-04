@@ -1,5 +1,5 @@
 IntelliTest sample "Taxation" showing the following:
- - checking whether the code under test had testability issues
+ - checking whether the code under test has testability issues
  - generating a compact suite with high coverage
 
 This is a .NET Framework app modelling some taxation functionality.
