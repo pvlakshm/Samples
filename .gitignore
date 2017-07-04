@@ -16,7 +16,6 @@
 /SimpleMath/.vs/SimpleMath/v15/.suo
 *.ide
 /.vs
-/IntelliTest
 /SimpleMath/SimpleMath/obj/Release
 /MSTestV2Ex/AttributeEx/AttributeEx/.vs/AttributeEx/v15
 /MSTestV2Ex/AttributeEx/AttributeEx/obj/Debug
@@ -31,3 +30,18 @@
 /MSTestV2Ex/AttributeEx/UnitTestProject1/obj/Debug
 /MSTestV2Ex/AttributeEx/UnitTestProject1
 /MSTestV2Ex/AttributeEx/AttributeExTests/bin/Debug
+/IntelliTest/SimpleBank/SimpleBank/obj/x86
+/IntelliTest/Taxation
+/IntelliTest/Taxation
+/IntelliTest/SimpleBank/SimpleBank/obj/x86
+/IntelliTest/Taxation
+/IntelliTest
+/IntelliTest/Taxation/DAL/obj
+/IntelliTest/Taxation/Models/obj
+/IntelliTest/Taxation/TaxCalculators/obj
+/IntelliTest/Taxation/TaxCalculators/obj
+/IntelliTest/Taxation/TaxCalculators/obj
+/IntelliTest/Taxation/TaxCalculators/obj/Debug
+*.cache
+*.cache
+*.cache
