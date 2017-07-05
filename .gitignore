@@ -41,3 +41,5 @@
 *.cache
 *.dll
 *.pdb
+/IntelliTest/PathCoverage/.vs/PathCoverage/v15
+/IntelliTest/PathCoverage/PathCoverage/obj/Debug
