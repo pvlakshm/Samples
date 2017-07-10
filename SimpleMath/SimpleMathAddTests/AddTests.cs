@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SimpleMath;
 using System;
 using System.Collections.Generic;
@@ -17,7 +17,7 @@ namespace SimpleMath.AddTests
             var i = new SimpleMath.Add().add(5, 4);
             Assert.AreEqual<int>(9, i);
 
-            System.Threading.Thread.Sleep(((1 * 1000) * 62) * 10); // sleep for a little over 10 mins.
+            //System.Threading.Thread.Sleep(((1 * 1000) * 62) * 10); // sleep for a little over 10 mins.
         }
 
         [TestMethod()]
