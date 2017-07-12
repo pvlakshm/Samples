@@ -43,3 +43,12 @@
 *.pdb
 /IntelliTest/PathCoverage/.vs/PathCoverage/v15
 /IntelliTest/PathCoverage/PathCoverage/obj/Debug
+/Shapes/.vs/Shapes/v15
+/Shapes/Debug
+/Shapes/Shapes/Debug/vc141.idb
+/Shapes/Shapes/Debug/Triangle.obj
+/Shapes/Shapes/Debug/Shapes.log
+/Shapes/Shapes/Debug/Shape.obj
+/Shapes/Shapes/Debug/Rectangle.obj
+/Shapes/Shapes/Debug/Main.obj
+/Shapes/Shapes/Debug/Circle.obj
