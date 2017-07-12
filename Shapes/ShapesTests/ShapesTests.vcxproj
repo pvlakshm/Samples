@@ -152,7 +152,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CircleTests.cpp" />
+    <ClCompile Include="CubeTests.cpp" />
+    <ClCompile Include="CuboidTests.cpp" />
+    <ClCompile Include="RectangleTests.cpp" />
+    <ClCompile Include="SphereTests.cpp" />
+    <ClCompile Include="SquareTests.cpp" />
+    <ClCompile Include="TetrahedronTests.cpp" />
+    <ClCompile Include="TriangleTests.cpp" />
     <ClCompile Include="unittest1.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shapes\Shapes.vcxproj">
+      <Project>{05f15232-a99b-4670-8de8-fd1941fc8022}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

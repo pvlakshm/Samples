@@ -13,10 +13,40 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\2DShapesTests">
+      <UniqueIdentifier>{698b2c4f-ccc8-4b74-9abe-e18fabca8c9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\3DShapesTests">
+      <UniqueIdentifier>{67e90d1b-5a2c-4e86-8d7c-16df556b8984}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="unittest1.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CircleTests.cpp">
+      <Filter>Source Files\2DShapesTests</Filter>
+    </ClCompile>
+    <ClCompile Include="RectangleTests.cpp">
+      <Filter>Source Files\2DShapesTests</Filter>
+    </ClCompile>
+    <ClCompile Include="SquareTests.cpp">
+      <Filter>Source Files\2DShapesTests</Filter>
+    </ClCompile>
+    <ClCompile Include="TriangleTests.cpp">
+      <Filter>Source Files\2DShapesTests</Filter>
+    </ClCompile>
+    <ClCompile Include="CubeTests.cpp">
+      <Filter>Source Files\3DShapesTests</Filter>
+    </ClCompile>
+    <ClCompile Include="CuboidTests.cpp">
+      <Filter>Source Files\3DShapesTests</Filter>
+    </ClCompile>
+    <ClCompile Include="SphereTests.cpp">
+      <Filter>Source Files\3DShapesTests</Filter>
+    </ClCompile>
+    <ClCompile Include="TetrahedronTests.cpp">
+      <Filter>Source Files\3DShapesTests</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
