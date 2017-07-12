@@ -9,6 +9,7 @@ private:
 
 public:
     Cuboid(int length = 1, int width = 1, int height = 1, const string & color = "black");
+
     int     getLength() const;
     void    setLength(int length);
 
@@ -18,5 +19,5 @@ public:
     int     getHeight() const;
     void    setHeight(int height);
 
-    double getVolume() const;
+    double  getVolume() const;
 };

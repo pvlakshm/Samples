@@ -6,7 +6,9 @@ private:
 
 public:
     Circle(int radius = 1, const string & color = "black");
+
     int     getRadius() const;
     void    setRadius(int radius);
+
     double  getArea() const;
 };

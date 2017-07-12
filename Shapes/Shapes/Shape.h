@@ -8,9 +8,11 @@ private:
 
 public:
     Shape(const string & color = "black");
+
     string  getColor() const;
     void    setColor(const string & color);
 
     virtual double getArea() const = 0;
+
     virtual double getVolume() const = 0;
 };

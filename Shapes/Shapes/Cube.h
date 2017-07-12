@@ -7,6 +7,7 @@ private:
 
 public:
     Cube(int side = 1, const string & color = "black");
+
     int     getSide() const;
     void    setSide(int side);
 
