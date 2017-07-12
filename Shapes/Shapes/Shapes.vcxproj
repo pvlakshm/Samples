@@ -113,17 +113,24 @@
   <ItemGroup>
     <ClInclude Include="Circle.h" />
     <ClInclude Include="Cube.h" />
+    <ClInclude Include="Cuboid.h" />
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="Sphere.h" />
     <ClInclude Include="Shape.h" />
+    <ClInclude Include="Square.h" />
     <ClInclude Include="Tetrahedron.h" />
     <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="Cube.cpp" />
+    <ClCompile Include="Cuboid.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="Shape.cpp" />
+    <ClCompile Include="Sphere.cpp" />
+    <ClCompile Include="Square.cpp" />
+    <ClCompile Include="Tetrahedron.cpp" />
     <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

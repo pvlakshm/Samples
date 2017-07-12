@@ -48,6 +48,12 @@
     <ClInclude Include="Rectangle.h">
       <Filter>Header Files\2DShapes</Filter>
     </ClInclude>
+    <ClInclude Include="Square.h">
+      <Filter>Header Files\2DShapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Cuboid.h">
+      <Filter>Header Files\3DShapes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Shape.cpp">
@@ -64,6 +70,21 @@
     </ClCompile>
     <ClCompile Include="Triangle.cpp">
       <Filter>Source Files\2DShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Square.cpp">
+      <Filter>Source Files\2DShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Sphere.cpp">
+      <Filter>Source Files\3DShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Cube.cpp">
+      <Filter>Source Files\3DShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Cuboid.cpp">
+      <Filter>Source Files\3DShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Tetrahedron.cpp">
+      <Filter>Source Files\3DShapes</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
