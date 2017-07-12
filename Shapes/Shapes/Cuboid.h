@@ -8,7 +8,7 @@ private:
     int height;
 
 public:
-    Cuboid(int length = 1, int width = 1, int height = 1, const string & color = "black");
+    Cuboid(int length = 1, int width = 1, int height = 1, const string & color = "green");
 
     int     getLength() const;
     void    setLength(int length);

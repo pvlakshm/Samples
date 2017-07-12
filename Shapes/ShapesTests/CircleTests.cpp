@@ -11,42 +11,42 @@ namespace ShapesTests
     public:
         TEST_METHOD(CircleWith0RadiusHas0Area)
         {
-            Circle c = Circle::Circle(0);
+            Circle c = Circle::Circle(0.0);
             double area = c.getArea();
-            Assert::AreEqual(0, area, DBL_EPSILON);
+            Assert::AreEqual(0.0, area, DBL_EPSILON);
         }
 
         TEST_METHOD(CircleWithNegativeRadiusHas0Area)
         {
-            Circle c = Circle::Circle(-1);
+            Circle c = Circle::Circle(-1.0);
             double area = c.getArea();
-            Assert::AreEqual(0, area, DBL_EPSILON);
+            Assert::AreEqual(0.0, area, DBL_EPSILON);
         }
 
         TEST_METHOD(CircleWithRadius5HasArea78)
         {
-            Circle c = Circle::Circle(5);
+            Circle c = Circle::Circle(5.0);
             double area = c.getArea();
             Assert::AreEqual(78.5398, area, 0.1);
         }
 
         TEST_METHOD(CircleWithRadius100HasArea31415)
         {
-            Circle c = Circle::Circle(100);
+            Circle c = Circle::Circle(100.0);
             double area = c.getArea();
             Assert::AreEqual(31415.9, area, 0.1);
         }
 
         TEST_METHOD(CircleWithRadius1HasArea3point1415)
         {
-            Circle c = Circle::Circle(1);
+            Circle c = Circle::Circle(1.0);
             double area = c.getArea();
             Assert::AreEqual(3.14159, area, 0.1);
         }
 
         TEST_METHOD(GetArea1000TimesGivesSameValue)
         {
-            Circle c = Circle::Circle(100);
+            Circle c = Circle::Circle(100.0);
 
             for (int i = 0; i < 1000; i++)
             {
@@ -59,21 +59,21 @@ namespace ShapesTests
 
         TEST_METHOD(GetAreaDoesNotChangeRadius)
         {
-            Circle c = Circle::Circle(100);
+            Circle c = Circle::Circle(100.0);
 
             double area1 = c.getArea();
             int rad = c.getRadius();
 
-            Assert::AreEqual(100, rad);
+            Assert::AreEqual(100.0, rad, 0.01);
         }
 
-        TEST_METHOD(DefaultCicrleIsNotGreenInColor)
+        TEST_METHOD(DefaultCicrleIsGreenInColor)
         {
             Circle c = Circle::Circle(0);
 
             string color = c.getColor();
 
-            Assert::IsFalse(color.compare("green") == 0);
+            Assert::IsTrue(color.compare("green") == 0);
         }
     };
 }

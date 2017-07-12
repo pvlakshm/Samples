@@ -2,13 +2,13 @@
 
 class Circle : public Shape {
 private:
-    int radius;
+    double radius;
 
 public:
-    Circle(int radius = 1, const string & color = "black");
+    Circle(double radius = 1.0, const string & color = "green");
 
-    int     getRadius() const;
-    void    setRadius(int radius);
+    double  getRadius() const;
+    void    setRadius(double radius);
 
     double  getArea() const;
     double  getVolume() const;

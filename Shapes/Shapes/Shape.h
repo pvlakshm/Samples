@@ -7,7 +7,7 @@ private:
     string  color;
 
 public:
-    Shape(const string & color = "black");
+    Shape(const string & color = "green");
 
     string  getColor() const;
     void    setColor(const string & color);

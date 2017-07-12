@@ -8,7 +8,7 @@ private:
     int height;
 
 public:
-    Tetrahedron(int sideA = 1, int sideB = 1, int sideC = 1, int height = 1, const string & color = "black");
+    Tetrahedron(int sideA = 1, int sideB = 1, int sideC = 1, int height = 1, const string & color = "green");
 
     int     getSideA() const;
     void    setSideA(int sideA);

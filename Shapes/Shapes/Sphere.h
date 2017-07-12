@@ -5,7 +5,7 @@ private:
     int radius;
 
 public:
-    Sphere(int radius = 1, const string & color = "black");
+    Sphere(int radius = 1, const string & color = "green");
 
     int     getRadius() const;
     void    setRadius(int radius);

@@ -6,7 +6,7 @@ private:
     int width;
 
 public:
-    Rectangle(int length = 1, int width = 1, const string & color = "black");
+    Rectangle(int length = 1, int width = 1, const string & color = "green");
 
     int     getLength() const;
     void    setLength(int length);

@@ -5,7 +5,7 @@ private:
     int side;
 
 public:
-    Square(int side = 1, const string & color = "black");
+    Square(int side = 1, const string & color = "green");
 
     int     getSide() const;
     void    setSide(int side);

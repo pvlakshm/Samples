@@ -2,15 +2,15 @@
 
 #define PI 3.14159265
 
-Circle::Circle(int radius, const string & color)
-    : Shape(color), radius(radius > 0 ? radius : 0) { }
+Circle::Circle(double radius, const string & color)
+    : Shape(color), radius(radius > 0.01 ? radius : 0.0) { }
 
-int Circle::getRadius() const
+double Circle::getRadius() const
 {
     return radius;
 }
 
-void Circle::setRadius(int radius)
+void Circle::setRadius(double radius)
 {
     this->radius = radius;
 }

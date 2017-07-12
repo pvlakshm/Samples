@@ -6,7 +6,7 @@ private:
     int height;
 
 public:
-    Triangle(int base = 1, int height = 1, const string & color = "black");
+    Triangle(int base = 1, int height = 1, const string & color = "green");
 
     int     getBase() const;
     void    setBase(int base);
