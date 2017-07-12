@@ -11,4 +11,5 @@ public:
     void    setRadius(int radius);
 
     double  getArea() const;
+    double  getVolume() const;
 };

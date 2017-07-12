@@ -2,6 +2,8 @@
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
+#include "Circle.h"
+
 namespace ShapesTests
 {
     TEST_CLASS(CircleTests)
@@ -9,22 +11,30 @@ namespace ShapesTests
     public:
         TEST_METHOD(CircleWith0RadiusHas0Area)
         {
-            // TODO: Your test code here
+            Circle c = Circle::Circle(0);
+            double area = c.getArea();
+            Assert::AreEqual(0, area, DBL_EPSILON);
         }
 
         TEST_METHOD(CircleWithNegativeRadiusNHas0Area)
         {
-            // TODO: Your test code here
+            Circle c = Circle::Circle(-1);
+            double area = c.getArea();
+            Assert::AreEqual(0, area, DBL_EPSILON);
         }
 
         TEST_METHOD(CircleWithRadius5HasArea78)
         {
-            // TODO: Your test code here
+            Circle c = Circle::Circle(5);
+            double area = c.getArea();
+            Assert::AreEqual(78.5398, area, 0.1);
         }
 
         TEST_METHOD(CircleWithRadius100HasArea31415)
         {
-            // TODO: Your test code here
+            Circle c = Circle::Circle(100);
+            double area = c.getArea();
+            Assert::AreEqual(31415.9, area, 0.1);
         }
     };
 }
