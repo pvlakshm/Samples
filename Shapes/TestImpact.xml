@@ -5,5 +5,10 @@
         <Dependency Name="/Shapes/Shapes/Circle.*" />
       </Dependencies>
     </Test>
+    <Test Filter="FullyQualifiedName~rectangle">
+      <Dependencies>
+        <Dependency Name="/Shapes/Shapes/rectangle.*" />
+      </Dependencies>
+    </Test>
   </Tests>
 </TestImpactMap>

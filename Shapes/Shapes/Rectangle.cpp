@@ -1,6 +1,5 @@
 #include "Rectangle.h"
 
-// Constructor
 Rectangle::Rectangle(int length, int width, const string & color)
     : Shape(color), length(length), width(width) { }
 
