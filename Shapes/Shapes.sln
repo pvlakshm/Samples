@@ -1,13 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26621.2
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shapes", "Shapes\Shapes.vcxproj", "{05F15232-A99B-4670-8DE8-FD1941FC8022}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShapesTests", "ShapesTests\ShapesTests.vcxproj", "{F3796ACD-1102-488C-B5F6-F4A270E225DF}"
 	ProjectSection(ProjectDependencies) = postProject
 		{05F15232-A99B-4670-8DE8-FD1941FC8022} = {05F15232-A99B-4670-8DE8-FD1941FC8022}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{20A980C0-5DC7-4A7D-8F5D-CB2EAB208741}"
+	ProjectSection(SolutionItems) = preProject
+		TestImpact.xml = TestImpact.xml
 	EndProjectSection
 EndProject
 Global

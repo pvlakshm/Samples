@@ -1,0 +1,9 @@
+﻿<TestImpactMap>
+  <Tests>
+    <Test Filter="FullyQualifiedName~circle">
+      <Dependencies>
+        <Dependency Name="/Shapes/Shapes/Circle.*" />
+      </Dependencies>
+    </Test>
+  </Tests>
+</TestImpactMap>
