@@ -54,6 +54,9 @@
     <ClInclude Include="Cuboid.h">
       <Filter>Header Files\3DShapes</Filter>
     </ClInclude>
+    <ClInclude Include="Position.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Shape.cpp">
@@ -85,6 +88,9 @@
     </ClCompile>
     <ClCompile Include="Tetrahedron.cpp">
       <Filter>Source Files\3DShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Position.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

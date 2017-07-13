@@ -114,6 +114,7 @@
     <ClInclude Include="Circle.h" />
     <ClInclude Include="Cube.h" />
     <ClInclude Include="Cuboid.h" />
+    <ClInclude Include="Position.h" />
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="Sphere.h" />
     <ClInclude Include="Shape.h" />
@@ -126,6 +127,7 @@
     <ClCompile Include="Cube.cpp" />
     <ClCompile Include="Cuboid.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Position.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="Shape.cpp" />
     <ClCompile Include="Sphere.cpp" />
