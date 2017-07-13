@@ -1,7 +1,7 @@
 #include "Circle.h"
 
 #define PI 3.14159265
-
+// this is a test
 Circle::Circle(double radius, const string & color)
     : Shape(color), radius(radius > 0.01 ? radius : 0.0) { }
 
