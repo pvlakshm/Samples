@@ -1,3 +1,6 @@
+#ifndef SHAPE_H
+#define SHAPE_H
+
 #include <string>
 
 using namespace std;
@@ -16,3 +19,5 @@ public:
 
     virtual double getVolume() const = 0;
 };
+
+#endif

@@ -1,3 +1,6 @@
+#ifndef TETRAHEDRON_H
+#define TETRAHEDRON_H
+
 #include "Shape.h"
 
 class Tetrahedron : public Shape {
@@ -24,3 +27,5 @@ public:
 
     double  getVolume() const;
 };
+
+#endif

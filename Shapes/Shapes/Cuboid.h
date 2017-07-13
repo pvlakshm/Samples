@@ -1,3 +1,6 @@
+#ifndef CUBOID_H
+#define CUBOID_H
+
 #include "Shape.h"
 
 class Cuboid : public Shape
@@ -21,3 +24,5 @@ public:
 
     double  getVolume() const;
 };
+
+#endif
