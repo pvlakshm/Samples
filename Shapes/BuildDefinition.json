@@ -1,0 +1,319 @@
+{
+	"build": [
+		{
+			"enabled": false,
+			"continueOnError": false,
+			"alwaysRun": false,
+			"displayName": "NuGet restore Shapes/Shapes.sln",
+			"timeoutInMinutes": 0,
+			"condition": "succeeded()",
+			"refName": "NuGetCommand_1",
+			"task": {
+				"id": "333b11bd-d341-40d9-afcf-b32d5ce6f23b",
+				"versionSpec": "0.*",
+				"definitionType": "task"
+			},
+			"inputs": {
+				"solution": "$(Parameters.solution)",
+				"nugetConfigPath": "",
+				"restoreMode": "restore",
+				"noCache": "false",
+				"nuGetRestoreArgs": "",
+				"verbosity": "-",
+				"nuGetVersion": "3.3.0",
+				"nuGetPath": ""
+			}
+		},
+		{
+			"enabled": true,
+			"continueOnError": false,
+			"alwaysRun": false,
+			"displayName": "Build solution Shapes/Shapes.sln",
+			"timeoutInMinutes": 0,
+			"condition": "succeeded()",
+			"refName": "VSBuild_2",
+			"task": {
+				"id": "71a9a2d3-a98a-4caa-96ab-affca411ecda",
+				"versionSpec": "1.*",
+				"definitionType": "task"
+			},
+			"inputs": {
+				"solution": "$(Parameters.solution)",
+				"vsVersion": "latest",
+				"msbuildArgs": "",
+				"platform": "",
+				"configuration": "",
+				"clean": "false",
+				"maximumCpuCount": "false",
+				"restoreNugetPackages": "false",
+				"msbuildArchitecture": "x86",
+				"logProjectEvents": "true",
+				"createLogFile": "false"
+			}
+		},
+		{
+			"enabled": true,
+			"continueOnError": false,
+			"alwaysRun": false,
+			"displayName": "VsTest - testAssemblies",
+			"timeoutInMinutes": 0,
+			"condition": "succeeded()",
+			"refName": "VSTest_3",
+			"task": {
+				"id": "ef087383-ee5e-42c7-9a53-ab56c98420f9",
+				"versionSpec": "2.*",
+				"definitionType": "task"
+			},
+			"inputs": {
+				"testSelector": "testAssemblies",
+				"testAssemblyVer2": "**\\*test*.dll\n!**\\obj\\**",
+				"testPlan": "",
+				"testSuite": "",
+				"testConfiguration": "",
+				"tcmTestRun": "$(test.RunId)",
+				"searchFolder": "$(System.DefaultWorkingDirectory)",
+				"testFiltercriteria": "",
+				"runOnlyImpactedTests": "true",
+				"runAllTestsAfterXBuilds": "50",
+				"uiTests": "false",
+				"vstestLocationMethod": "version",
+				"vsTestVersion": "latest",
+				"vstestLocation": "",
+				"runSettingsFile": "",
+				"overrideTestrunParameters": "",
+				"runInParallel": "False",
+				"runTestsInIsolation": "False",
+				"pathtoCustomTestAdapters": "",
+				"codeCoverageEnabled": "False",
+				"otherConsoleOptions": "",
+				"testRunTitle": "",
+				"platform": "$(BuildPlatform)",
+				"configuration": "$(BuildConfiguration)",
+				"publishRunAttachments": "true"
+			}
+		},
+		{
+			"enabled": false,
+			"continueOnError": true,
+			"alwaysRun": false,
+			"displayName": "Publish symbols path: ",
+			"timeoutInMinutes": 0,
+			"condition": "succeeded()",
+			"refName": "PublishSymbols_4",
+			"task": {
+				"id": "0675668a-7bba-4ccb-901d-5ad6554ca653",
+				"versionSpec": "1.*",
+				"definitionType": "task"
+			},
+			"inputs": {
+				"SymbolsPath": "",
+				"SearchPattern": "**\\bin\\**\\*.pdb",
+				"SymbolsFolder": "",
+				"SkipIndexing": "false",
+				"TreatNotIndexedAsWarning": "false",
+				"SymbolsMaximumWaitTime": "",
+				"SymbolsProduct": "",
+				"SymbolsVersion": "",
+				"SymbolsArtifactName": "Symbols_$(BuildConfiguration)"
+			}
+		},
+		{
+			"enabled": false,
+			"continueOnError": false,
+			"alwaysRun": true,
+			"displayName": "Copy Files to: $(build.artifactstagingdirectory)",
+			"timeoutInMinutes": 0,
+			"condition": "succeededOrFailed()",
+			"refName": "CopyFiles_5",
+			"task": {
+				"id": "5bfb729a-a7c8-4a78-a7c3-8d717bb7c13c",
+				"versionSpec": "2.*",
+				"definitionType": "task"
+			},
+			"inputs": {
+				"SourceFolder": "$(build.sourcesdirectory)",
+				"Contents": "**\\bin\\$(BuildConfiguration)\\**",
+				"TargetFolder": "$(build.artifactstagingdirectory)",
+				"CleanTargetFolder": "false",
+				"OverWrite": "false",
+				"flattenFolders": "false"
+			}
+		},
+		{
+			"enabled": false,
+			"continueOnError": false,
+			"alwaysRun": true,
+			"displayName": "Publish Artifact: drop",
+			"timeoutInMinutes": 0,
+			"condition": "succeededOrFailed()",
+			"refName": "PublishBuildArtifacts_6",
+			"task": {
+				"id": "2ff763a7-ce83-4e1f-bc89-0ae63477cebe",
+				"versionSpec": "1.*",
+				"definitionType": "task"
+			},
+			"inputs": {
+				"PathtoPublish": "$(build.artifactstagingdirectory)",
+				"ArtifactName": "drop",
+				"ArtifactType": "Container",
+				"TargetPath": "\\\\my\\share\\$(Build.DefinitionName)\\$(Build.BuildNumber)"
+			}
+		}
+	],
+	"options": [
+		{
+			"enabled": true,
+			"definition": {
+				"id": "5d58cc01-7c75-450c-be18-a388ddb129ec"
+			},
+			"inputs": {
+				"branchFilters": "[\"+refs/heads/*\"]",
+				"additionalFields": "{}"
+			}
+		},
+		{
+			"enabled": false,
+			"definition": {
+				"id": "7c555368-ca64-4199-add6-9ebaf0b0137d"
+			},
+			"inputs": {
+				"multipliers": "[]",
+				"parallel": "false",
+				"continueOnError": "true",
+				"additionalFields": "{}"
+			}
+		},
+		{
+			"enabled": false,
+			"definition": {
+				"id": "a9db38f9-9fdc-478c-b0f9-464221e58316"
+			},
+			"inputs": {
+				"workItemType": "937619",
+				"assignToRequestor": "true",
+				"additionalFields": "{}"
+			}
+		},
+		{
+			"enabled": false,
+			"definition": {
+				"id": "57578776-4c22-4526-aeb0-86b6da17ee9c"
+			},
+			"inputs": {}
+		}
+	],
+	"variables": {
+		"system.debug": {
+			"value": "false",
+			"allowOverride": true
+		},
+		"tia.disabletiadatacollector": {
+			"value": "true"
+		},
+		"tia.usermapfile": {
+			"value": "$(System.DefaultWorkingDirectory)/Shapes/TestImpact.xml"
+		}
+	},
+	"retentionRules": [
+		{
+			"branches": [
+				"+refs/heads/*"
+			],
+			"artifacts": [],
+			"artifactTypesToDelete": [
+				"FilePath",
+				"SymbolStore"
+			],
+			"daysToKeep": 10,
+			"minimumToKeep": 1,
+			"deleteBuildRecord": true,
+			"deleteTestResults": true
+		}
+	],
+	"_links": {
+		"self": {
+			"href": "https://someaccount.visualstudio.com/c35e7668-07fd-4305-996f-fcd5b7750be1/_apis/build/Definitions/94"
+		},
+		"web": {
+			"href": "https://someaccount.visualstudio.com/_permalink/_build/index?collectionId=0b9675fc-51d3-4a05-9bf9-5299eca2aa0e&projectId=c35e7668-07fd-4305-996f-fcd5b7750be1&definitionId=94"
+		},
+		"editor": {
+			"href": "https://someaccount.visualstudio.com/_permalink/_build/definitionEditor?collectionId=0b9675fc-51d3-4a05-9bf9-5299eca2aa0e&projectId=c35e7668-07fd-4305-996f-fcd5b7750be1&definitionId=94"
+		}
+	},
+	"buildNumberFormat": "$(date:yyyyMMdd)$(rev:.r)",
+	"jobAuthorizationScope": 1,
+	"jobTimeoutInMinutes": 60,
+	"jobCancelTimeoutInMinutes": 5,
+	"repository": {
+		"properties": {
+			"cleanOptions": "0",
+			"gitLfsSupport": "false",
+			"skipSyncSource": "false",
+			"checkoutNestedSubmodules": "false",
+			"reportBuildStatus": "true",
+			"fetchDepth": "0",
+			"connectedServiceId": "c39b3ccb-b8dd-4f75-bfd7-9512eea80452",
+			"apiUrl": "https://api.github.com/repos/pvlakshm/Samples",
+			"branchesUrl": "https://api.github.com/repos/pvlakshm/Samples/branches",
+			"cloneUrl": "https://github.com/pvlakshm/Samples.git",
+			"refsUrl": "https://api.github.com/repos/pvlakshm/Samples/git/refs",
+			"definitionId": "94",
+			"branch": "master"
+		},
+		"id": "https://github.com/pvlakshm/Samples.git",
+		"type": "GitHub",
+		"name": "pvlakshm/Samples",
+		"url": "https://github.com/pvlakshm/Samples.git",
+		"defaultBranch": "master",
+		"clean": "false",
+		"checkoutSubmodules": false
+	},
+	"processParameters": {
+		"inputs": [
+			{
+				"options": {},
+				"properties": {},
+				"name": "solution",
+				"label": "Solution",
+				"defaultValue": "Shapes/Shapes.sln",
+				"required": true,
+				"type": "filePath",
+				"helpMarkDown": "The path to the Visual Studio solution file or NuGet packages.config. Wildcards can be used.  For example, `**\\\\*.sln` for all sln files in all sub folders."
+			}
+		]
+	},
+	"quality": 1,
+	"authoredBy": {
+		"id": "79a42983-9b86-41c5-a242-3ffb99f6ba30",
+		"displayName": "Siddhartha Pandey",
+		"uniqueName": "siddhap@microsoft.com",
+		"url": "https://app.vssps.visualstudio.com/Af52d4965-8008-4f06-8fca-b668bf05d9be/_apis/Identities/79a42983-9b86-41c5-a242-3ffb99f6ba30",
+		"imageUrl": "https://someaccount.visualstudio.com/_api/_common/identityImage?id=79a42983-9b86-41c5-a242-3ffb99f6ba30"
+	},
+	"queue": {
+		"id": 298,
+		"name": "Hosted VS2017",
+		"pool": {
+			"id": 23,
+			"name": "Hosted VS2017",
+			"isHosted": true
+		}
+	},
+	"id": 94,
+	"name": "pratap samples",
+	"url": "https://someaccount.visualstudio.com/c35e7668-07fd-4305-996f-fcd5b7750be1/_apis/build/Definitions/94",
+	"uri": "vstfs:///Build/Definition/94",
+	"path": "\\",
+	"type": 2,
+	"revision": 15,
+	"createdDate": "2017-07-13T15:24:04.390Z",
+	"project": {
+		"id": "c35e7668-07fd-4305-996f-fcd5b7750be1",
+		"name": "github",
+		"url": "https://someaccount.visualstudio.com/_apis/projects/c35e7668-07fd-4305-996f-fcd5b7750be1",
+		"state": "wellFormed",
+		"revision": 253,
+		"visibility": 1
+	}
+}
