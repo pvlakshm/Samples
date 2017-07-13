@@ -9,7 +9,7 @@ namespace ShapesTests
     TEST_CLASS(CircleTests)
     {
     public:
-        TEST_METHOD(CircleWith0RadiusHas0Area)
+        TEST_METHOD(CircleWithRadius0Has0Area)
         {
             Circle c(0.0);
             double area = c.getArea();
@@ -44,7 +44,7 @@ namespace ShapesTests
             Assert::AreEqual(3.14159, area, 0.1);
         }
 
-        TEST_METHOD(GetArea1000TimesGivesSameValue)
+        TEST_METHOD(CircleGetAreaCalled1000TimesGivesSameValue)
         {
             Circle c = Circle::Circle(100.0);
 
@@ -57,7 +57,7 @@ namespace ShapesTests
             }
         }
 
-        TEST_METHOD(GetAreaDoesNotChangeRadius)
+        TEST_METHOD(CircleGetAreaDoesNotChangeRadius)
         {
             Circle c = Circle::Circle(100.0);
 
@@ -67,7 +67,7 @@ namespace ShapesTests
             Assert::AreEqual(100.0, rad, 0.01);
         }
 
-        TEST_METHOD(DefaultCicrleIsGreenInColor)
+        TEST_METHOD(CircleDefaultColorIsGreen)
         {
             Circle c = Circle::Circle(0);
 
