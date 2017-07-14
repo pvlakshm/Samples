@@ -123,17 +123,17 @@
     <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Circle.cpp" />
-    <ClCompile Include="Cube.cpp" />
-    <ClCompile Include="Cuboid.cpp" />
+    <ClCompile Include="Src/2DShapes/Circle.cpp" />
+    <ClCompile Include="Src/3DShapes/Cube.cpp" />
+    <ClCompile Include="Src/3DShapes/Cuboid.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Position.cpp" />
-    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="Src/2DShapes/Rectangle.cpp" />
     <ClCompile Include="Shape.cpp" />
-    <ClCompile Include="Sphere.cpp" />
-    <ClCompile Include="Square.cpp" />
-    <ClCompile Include="Tetrahedron.cpp" />
-    <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="Src/3DShapes/Sphere.cpp" />
+    <ClCompile Include="Src/2DShapes/Square.cpp" />
+    <ClCompile Include="Src/3DShapes/Tetrahedron.cpp" />
+    <ClCompile Include="Src/2DShapes/Triangle.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
