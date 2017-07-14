@@ -22,28 +22,28 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CircleTests.cpp">
-      <Filter>Src</Filter>
+      <Filter>Src\2DShapesTests</Filter>
     </ClCompile>
     <ClCompile Include="CubeTests.cpp">
-      <Filter>Src</Filter>
+      <Filter>Src\3DShapesTests</Filter>
     </ClCompile>
     <ClCompile Include="CuboidTests.cpp">
-      <Filter>Src</Filter>
+      <Filter>Src\3DShapesTests</Filter>
     </ClCompile>
     <ClCompile Include="RectangleTests.cpp">
-      <Filter>Src</Filter>
+      <Filter>Src\2DShapesTests</Filter>
     </ClCompile>
     <ClCompile Include="SphereTests.cpp">
-      <Filter>Src</Filter>
+      <Filter>Src\3DShapesTests</Filter>
     </ClCompile>
     <ClCompile Include="SquareTests.cpp">
-      <Filter>Src</Filter>
+      <Filter>Src\2DShapesTests</Filter>
     </ClCompile>
     <ClCompile Include="TetrahedronTests.cpp">
-      <Filter>Src</Filter>
+      <Filter>Src\3DShapesTests</Filter>
     </ClCompile>
     <ClCompile Include="TriangleTests.cpp">
-      <Filter>Src</Filter>
+      <Filter>Src\2DShapesTests</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
