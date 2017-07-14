@@ -59,38 +59,38 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Shape.cpp">
+    <ClCompile Include="Src/Shape.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="Main.cpp">
+    <ClCompile Include="Src/Main.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="Position.cpp">
+    <ClCompile Include="Src/Position.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="Src\2DShapes\Circle.cpp">
-      <Filter>Src\2DShapes</Filter>
+    <ClCompile Include="Src/2DShapes/Circle.cpp">
+      <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="Src\2DShapes\Rectangle.cpp">
-      <Filter>Src\2DShapes</Filter>
+    <ClCompile Include="Src/3DShapes/Cube.cpp">
+      <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="Src\2DShapes\Square.cpp">
-      <Filter>Src\2DShapes</Filter>
+    <ClCompile Include="Src/3DShapes/Cuboid.cpp">
+      <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="Src\2DShapes\Triangle.cpp">
-      <Filter>Src\2DShapes</Filter>
+    <ClCompile Include="Src/2DShapes/Rectangle.cpp">
+      <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="Src\3DShapes\Cube.cpp">
-      <Filter>Src\3DShapes</Filter>
+    <ClCompile Include="Src/3DShapes/Sphere.cpp">
+      <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="Src\3DShapes\Cuboid.cpp">
-      <Filter>Src\3DShapes</Filter>
+    <ClCompile Include="Src/2DShapes/Square.cpp">
+      <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="Src\3DShapes\Sphere.cpp">
-      <Filter>Src\3DShapes</Filter>
+    <ClCompile Include="Src/3DShapes/Tetrahedron.cpp">
+      <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="Src\3DShapes\Tetrahedron.cpp">
-      <Filter>Src\3DShapes</Filter>
+    <ClCompile Include="Src/2DShapes/Triangle.cpp">
+      <Filter>Src</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
