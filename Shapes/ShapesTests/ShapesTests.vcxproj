@@ -157,14 +157,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CircleTests.cpp" />
-    <ClCompile Include="CubeTests.cpp" />
-    <ClCompile Include="CuboidTests.cpp" />
-    <ClCompile Include="RectangleTests.cpp" />
-    <ClCompile Include="SphereTests.cpp" />
-    <ClCompile Include="SquareTests.cpp" />
-    <ClCompile Include="TetrahedronTests.cpp" />
-    <ClCompile Include="TriangleTests.cpp" />
+    <ClCompile Include="Src/2DShapesTests/CircleTests.cpp" />
+    <ClCompile Include="Src/3DShapesTests/CubeTests.cpp" />
+    <ClCompile Include="Src/3DShapesTests/CuboidTests.cpp" />
+    <ClCompile Include="Src/2DShapesTests/RectangleTests.cpp" />
+    <ClCompile Include="Src/3DShapesTests/SphereTests.cpp" />
+    <ClCompile Include="Src/2DShapesTests/SquareTests.cpp" />
+    <ClCompile Include="Src/3DShapesTests/TetrahedronTests.cpp" />
+    <ClCompile Include="Src/2DShapesTests/TriangleTests.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
