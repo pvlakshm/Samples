@@ -94,3 +94,6 @@
 /Shapes/Shapes/Release
 /Shapes/ShapesTests/x64
 *.log
+/Shapes/Release
+*.obj
+*.tlog
