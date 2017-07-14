@@ -21,29 +21,29 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Src\2DShapesTests\CircleTests.cpp">
-      <Filter>Src\2DShapesTests</Filter>
+    <ClCompile Include="Src/2DShapesTests/CircleTests.cpp">
+      <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="Src\3DShapesTests\CubeTests.cpp">
-      <Filter>Src\3DShapesTests</Filter>
+    <ClCompile Include="Src/3DShapesTests/CubeTests.cpp">
+      <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="Src\3DShapesTests\CuboidTests.cpp">
-      <Filter>Src\3DShapesTests</Filter>
+    <ClCompile Include="Src/3DShapesTests/CuboidTests.cpp">
+      <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="Src\2DShapesTests\RectangleTests.cpp">
-      <Filter>Src\2DShapesTests</Filter>
+    <ClCompile Include="Src/2DShapesTests/RectangleTests.cpp">
+      <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="Src\3DShapesTests\SphereTests.cpp">
-      <Filter>Src\3DShapesTests</Filter>
+    <ClCompile Include="Src/3DShapesTests/SphereTests.cpp">
+      <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="Src\2DShapesTests\SquareTests.cpp">
-      <Filter>Src\2DShapesTests</Filter>
+    <ClCompile Include="Src/2DShapesTests/SquareTests.cpp">
+      <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="Src\3DShapesTests\TetrahedronTests.cpp">
-      <Filter>Src\3DShapesTests</Filter>
+    <ClCompile Include="Src/3DShapesTests/TetrahedronTests.cpp">
+      <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="Src\2DShapesTests\TriangleTests.cpp">
-      <Filter>Src\2DShapesTests</Filter>
+    <ClCompile Include="Src/2DShapesTests/TriangleTests.cpp">
+      <Filter>Src</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
