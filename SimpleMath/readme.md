@@ -1,4 +1,4 @@
-
+I
 Using this as sample code to illustrate VSTS TIA.
 Read more about TA here:
 1.	[Accelerated Continuous Testing with Test Impact Analysis – Part 1](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/02/accelerated-continuous-testing-with-test-impact-analysis-part-1/), March 2, 2017
