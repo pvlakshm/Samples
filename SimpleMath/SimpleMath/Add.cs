@@ -8,6 +8,7 @@ namespace SimpleMath
 {
     public class Add
     {
+        // comment
         public int add(int x, int y)
         {
             return x + y;
