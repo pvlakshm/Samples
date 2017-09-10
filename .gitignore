@@ -97,3 +97,7 @@
 /Shapes/Release
 *.obj
 *.tlog
+/MemberAccess/Sample1/.vs/Sample1/v15
+/MemberAccess/Sample1/packages
+/MemberAccess/Sample1/Sample1/obj/Debug
+/MemberAccess/Sample1/Sample1Tests/obj/Debug

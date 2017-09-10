@@ -1,0 +1,1 @@
+﻿public class Bar { public static bool Debug = false; }
