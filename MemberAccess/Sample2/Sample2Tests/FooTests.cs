@@ -13,7 +13,7 @@ namespace Tests
         [TestMethod()]
         public void MyFuncTest()
         {
-//            Assert.Fail();
+            new Foo().MyFunc();
         }
     }
 }
