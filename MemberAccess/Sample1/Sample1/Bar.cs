@@ -1,1 +1,1 @@
-﻿public class Bar { public static bool Debug = true; }
+﻿public class Bar { public static bool Debug = false; }
