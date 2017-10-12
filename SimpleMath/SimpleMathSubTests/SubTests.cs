@@ -42,6 +42,7 @@ namespace SimpleMath.SubTests
         [DataTestMethod()]
         [DataRow(3, 2, 1)]
         [DataRow(2, 3, -1)]
+        [DataRow(2, 2, 0)]
         public void subtractTest5(int x, int y, int res)
         {
             int i = new SimpleMath.Sub().subtract(x, y);
