@@ -38,5 +38,14 @@ namespace SimpleMath.SubTests
             int i = new SimpleMath.Sub().subtract(5000, 4000);
             Assert.AreEqual<int>(1000, i);
         }
+
+        [DataTestMethod()]
+        [DataRow(3, 2, 1)]
+        [DataRow(2, 3, -1)]
+        public void subtractTest5(int x, int y, int res)
+        {
+            int i = new SimpleMath.Sub().subtract(x, y);
+            Assert.AreEqual<int>(res, i);
+        }
     }
 }
