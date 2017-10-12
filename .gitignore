@@ -130,3 +130,5 @@
 /UWP_UT_testproject/UWP_UT_testproject/bin/x86/Debug/resources.pri
 /UWP_UT_testproject/UWP_UT_testproject/bin/x86/Debug/AppxManifest.xml
 /UWP_UT_testproject/UWP_UT_testproject/obj
+/NUnitTests/.vs/NUnitTests/v15/Server/sqlite3
+/NUnitTests/NUnitTests/obj/Debug
