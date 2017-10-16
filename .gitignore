@@ -133,3 +133,5 @@
 /NUnitTests/.vs/NUnitTests/v15/Server/sqlite3
 /NUnitTests/NUnitTests/obj/Debug
 /NUnitTests/.vs/NUnitTests/v15
+/NUnitTests/NUnit2x/NUnit2x/obj/Debug
+/NUnitTests/NUnit2x/.vs/NUnit2x/v15/Server/sqlite3
