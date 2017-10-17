@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27009.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit2x", "NUnit2x\NUnit2x.csproj", "{ED916F3E-AAB2-4593-8AC6-CAE9030906A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit2xTests", "NUnit2xTests\NUnit2xTests.csproj", "{04F11913-5751-4B20-9F74-BA2228EBEBB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{ED916F3E-AAB2-4593-8AC6-CAE9030906A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED916F3E-AAB2-4593-8AC6-CAE9030906A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED916F3E-AAB2-4593-8AC6-CAE9030906A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04F11913-5751-4B20-9F74-BA2228EBEBB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04F11913-5751-4B20-9F74-BA2228EBEBB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04F11913-5751-4B20-9F74-BA2228EBEBB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04F11913-5751-4B20-9F74-BA2228EBEBB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

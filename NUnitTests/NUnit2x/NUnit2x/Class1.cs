@@ -8,5 +8,12 @@ namespace NUnit2x
 {
     public class Class1
     {
+        public bool isEven(int i)
+        {
+            if (i % 2 == 0)
+                return true;
+            else
+                return false;
+        }
     }
 }
