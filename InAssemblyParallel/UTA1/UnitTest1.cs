@@ -7,29 +7,52 @@ namespace UTA1
     [TestClass]
     public class UTA1_C1
     {
-        static bool bAlreadyCalled = false;
+        static bool bTestClassInitCalled = false;
+        static bool bTestInitCalled = false;
 
         [ClassInitialize]
-        public static void init(TestContext tc)
+        public static void testclassinit(TestContext tc)
         {
             // regardless of the parallelization mode, this should be called only once
-            if (bAlreadyCalled)
+            if (bTestClassInitCalled)
             {
                 throw new Exception();
             }
 
-            bAlreadyCalled = true;
+            bTestClassInitCalled = true;
         }
 
         [ClassCleanup]
-        public static void cleanup()
+        public static void testclasscleanup()
         {
             // regardless of the parallelization mode, this should be called only once
-            if (!bAlreadyCalled)
+            if (!bTestClassInitCalled)
             {
                 throw new Exception();
             }
         }
+
+
+        public void testinit()
+        {
+            if (bTestClassInitCalled)
+            {
+                throw new Exception();
+            }
+
+            bTestInitCalled = true;
+        }
+
+        public void testleanup()
+        {
+            if (!bTestInitCalled)
+            {
+                throw new Exception();
+            }
+
+            bTestInitCalled = false; // get it ready fr the next call to testInit()
+        }
+
 
         [TestMethod]
         public void UTA1_C1_TM1()
