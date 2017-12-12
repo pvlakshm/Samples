@@ -7,13 +7,15 @@ namespace UTA1
     [TestClass]
     public class UTA1_C1
     {
+        // --------------------------------------------
+        // regardless of parallelization mode, classinit/cleanup should be called only once.
+        // Furthermore, classinit should have been called before classcleanup.
+        // we use a static boolean to check that sequence of calls, and that it was called only once.
         static bool bTestClassInitCalled = false;
-        static bool bTestInitCalled = false;
 
         [ClassInitialize]
         public static void testclassinit(TestContext tc)
         {
-            // regardless of the parallelization mode, this should be called only once
             if (bTestClassInitCalled)
             {
                 throw new Exception();
@@ -31,11 +33,18 @@ namespace UTA1
                 throw new Exception();
             }
         }
+        // --------------------------------------------
 
 
+        // --------------------------------------------
+        // regardless of parallelization mode, testinit/cleanup should be called before/after every test in this class.
+        // Furthermore, testinit should have been called before testcleanup.
+        // we use a boolean to check that sequence of calls, and that it was called only once.
+        bool bTestInitCalled = false;
+        [TestInitialize]
         public void testinit()
         {
-            if (bTestClassInitCalled)
+            if (bTestInitCalled)
             {
                 throw new Exception();
             }
@@ -43,6 +52,7 @@ namespace UTA1
             bTestInitCalled = true;
         }
 
+        [TestCleanup]
         public void testleanup()
         {
             if (!bTestInitCalled)
@@ -52,6 +62,7 @@ namespace UTA1
 
             bTestInitCalled = false; // get it ready fr the next call to testInit()
         }
+        // --------------------------------------------
 
 
         [TestMethod]
