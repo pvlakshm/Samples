@@ -142,3 +142,10 @@
 /NUnitTests/NUnit3x/packages
 /NUnitTests/NUnit3x/NUnit3xTests/obj/Debug
 /NUnitTests/NUnit3x/NUnit3xTests/bin/Debug
+/InAssemblyParallel/.vs/inassemblyparallel/v15/Server/sqlite3
+/InAssemblyParallel/ClassLibrary1/obj/Release
+/InAssemblyParallel/UTA1/obj/Release
+/InAssemblyParallel/UTA4/obj/Release
+/InAssemblyParallel/UTA3/obj/Release
+/InAssemblyParallel/UTA2/obj/Release
+/NUnitTests/NUnit2x

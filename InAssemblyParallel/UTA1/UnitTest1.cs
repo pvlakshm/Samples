@@ -7,6 +7,30 @@ namespace UTA1
     [TestClass]
     public class UTA1_C1
     {
+        static bool bAlreadyCalled = false;
+
+        [ClassInitialize]
+        public static void init(TestContext tc)
+        {
+            // regardless of the parallelization mode, this should be called only once
+            if (bAlreadyCalled)
+            {
+                throw new Exception();
+            }
+
+            bAlreadyCalled = true;
+        }
+
+        [ClassCleanup]
+        public static void cleanup()
+        {
+            // regardless of the parallelization mode, this should be called only once
+            if (!bAlreadyCalled)
+            {
+                throw new Exception();
+            }
+        }
+
         [TestMethod]
         public void UTA1_C1_TM1()
         {
