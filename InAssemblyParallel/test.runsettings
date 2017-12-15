@@ -3,14 +3,14 @@
 
   <!-- Configurations that affect the Test Framework -->
   <!--<RunConfiguration>
-    <DoNotParallelize/>
+    <DisableParallelization>true</DisableParallelization>
   </RunConfiguration>-->
   
   <!-- MSTest adapter -->
   <MSTest>
     <Parallelize>
       <Workers>4</Workers>
-      <Scope>MethodLevel</Scope>/>
+      <Scope>MethodLevel</Scope>
     </Parallelize>
   </MSTest>
 
