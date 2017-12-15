@@ -12,6 +12,7 @@ namespace NUnit3x
         {
             System.Threading.Thread.Sleep(1000 * 2);
             double d = Math.Sqrt(i);
+            // comment
             return d;
         }
     }
