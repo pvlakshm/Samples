@@ -10,7 +10,7 @@ namespace NUnit3x
     {
         public bool isEven(int i)
         {
-            System.Threading.Thread.Sleep(1000);
+            // System.Threading.Thread.Sleep(1000);
             if (i % 2 == 0)
                 return true;
             else
