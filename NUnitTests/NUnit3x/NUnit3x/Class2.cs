@@ -10,6 +10,7 @@ namespace NUnit3x
     {
         public double Root(double i)
         {
+            System.Threading.Thread.Sleep(1000 * 2);
             double d = Math.Sqrt(i);
             return d;
         }
