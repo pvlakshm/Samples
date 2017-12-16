@@ -1,10 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27110.0
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0C04E883-58FD-4BC8-8EE3-449571A395A1}"
 	ProjectSection(SolutionItems) = preProject
+		C:\Users\pratapl\Desktop\1.jpg = C:\Users\pratapl\Desktop\1.jpg
+		C:\Users\pratapl\Desktop\2.jpg = C:\Users\pratapl\Desktop\2.jpg
+		C:\Users\pratapl\Desktop\3.jpg = C:\Users\pratapl\Desktop\3.jpg
+		readme.md = readme.md
 		test.runsettings = test.runsettings
 	EndProjectSection
 EndProject

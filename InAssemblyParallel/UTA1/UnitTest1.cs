@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ClassLibrary1;
 
-[assembly: Parallelize(Workers = 4, Scope = ExecutionScope.MethodLevel)]
+//[assembly: Parallelize(Workers = 4, Scope = ExecutionScope.MethodLevel)]
 
 namespace UTA1
 {
@@ -81,19 +81,19 @@ namespace UTA1
             Assert.IsTrue(true);
         }
 
-        [TestMethod]
-        public void UTA1_C1_TM3()
-        {
-            new Class1().Delay(3);
-            Assert.IsTrue(true);
-        }
+        //[TestMethod]
+        //public void UTA1_C1_TM3()
+        //{
+        //    new Class1().Delay(3);
+        //    Assert.IsTrue(true);
+        //}
 
-        [TestMethod]
-        public void UTA1_C1_TM4()
-        {
-            new Class1().Delay(3);
-            Assert.IsTrue(true);
-        }
+        //[TestMethod]
+        //public void UTA1_C1_TM4()
+        //{
+        //    new Class1().Delay(3);
+        //    Assert.IsTrue(true);
+        //}
     }
 
     [TestClass]
@@ -170,18 +170,18 @@ namespace UTA1
             Assert.IsTrue(true);
         }
 
-        [TestMethod]
-        public void UTA1_C2_TM3()
-        {
-            new Class1().Delay(3);
-            Assert.IsTrue(true);
-        }
+        //[TestMethod]
+        //public void UTA1_C2_TM3()
+        //{
+        //    new Class1().Delay(3);
+        //    Assert.IsTrue(true);
+        //}
 
-        [TestMethod]
-        public void UTA1_C2_TM4()
-        {
-            new Class1().Delay(3);
-            Assert.IsTrue(true);
-        }
+        //[TestMethod]
+        //public void UTA1_C2_TM4()
+        //{
+        //    new Class1().Delay(3);
+        //    Assert.IsTrue(true);
+        //}
     }
 }
