@@ -5,17 +5,20 @@
   </RunConfiguration>
   <DataCollectionRunSettings>
     <DataCollectors>
-      <DataCollector uri="datacollector://microsoft/TestImpact/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.TestImpactDataCollector, Microsoft.VisualStudio.TraceCollector, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Test Impact">
+      <DataCollector friendlyName="Test Impact">
         <Configuration>
           <ImpactLevel>file</ImpactLevel>
           <LogFilePath>true</LogFilePath>
         </Configuration>
       </DataCollector>
+    <DataCollector friendlyName="SampleDataCollector" />
     </DataCollectors>
   </DataCollectionRunSettings>
 
-  <Nunit>
+  <NUnit>
     <NumberOfTestWorkers>1</NumberOfTestWorkers>
     <SynchronousEvents>true</SynchronousEvents>
-  </Nunit>  
+    <DumpXmlTestDiscovery>true</DumpXmlTestDiscovery>
+    <DumpXmlTestResults>true</DumpXmlTestResults>
+  </NUnit>  
 </RunSettings>

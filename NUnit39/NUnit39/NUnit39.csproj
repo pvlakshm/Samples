@@ -52,6 +52,13 @@
       <Project>{e7608256-04e1-426c-bff4-d541a649afd9}</Project>
       <Name>ClassLibrary1</Name>
     </ProjectReference>
+    <ProjectReference Include="..\OutOfProcDataCollector\OutOfProcDataCollector.csproj">
+      <Project>{69b8a34f-afd9-4131-8597-f2b735dedd30}</Project>
+      <Name>OutOfProcDataCollector</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
