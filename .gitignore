@@ -162,3 +162,6 @@
 /NUnit39/TestResults
 /NUnit39/.vs/NUnit39/v15/Server/sqlite3
 /NUnit39/NUnit39/bin/Debug
+/NUnit39/ClassLibrary1/obj/Debug
+/NUnit39/NUnit39/obj/Debug
+/NUnit39/packages

@@ -37,6 +37,5 @@ E:\Data\Repos\Samples\NUnit39\OutOfProcDataCollector\obj\Debug\net451\OutOfProcD
 E:\Data\Repos\Samples\NUnit39\OutOfProcDataCollector\obj\Debug\net451\OutOfProcDataCollector.AssemblyInfo.cs
 E:\Data\Repos\Samples\NUnit39\OutOfProcDataCollector\obj\Debug\net451\OutOfProcDataCollector.dll
 E:\Data\Repos\Samples\NUnit39\OutOfProcDataCollector\obj\Debug\net451\OutOfProcDataCollector.pdb
-E:\Data\Repos\Samples\NUnit39\OutOfProcDataCollector\obj\Debug\net451\OutOfProcDataCollector.csprojResolveAssemblyReference.cache
 E:\Data\Repos\Samples\NUnit39\OutOfProcDataCollector\bin\Debug\net451\System.Reflection.Metadata.dll
 E:\Data\Repos\Samples\NUnit39\OutOfProcDataCollector\bin\Debug\net451\System.Collections.Immutable.dll
