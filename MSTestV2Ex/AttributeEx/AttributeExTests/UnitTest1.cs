@@ -39,7 +39,6 @@ namespace AttributeExTests
         [Note("\u3400\u34a3")]
         public void TestMethod5a() { }
 
-
         // Four byte: Ext-B { "𠀀𠀁","\ud840\udc00\ud840\udc01"},
         [TestMethod]
         [Note("𠀀𠀁")]
@@ -47,8 +46,6 @@ namespace AttributeExTests
 
         [TestMethod]
         [Note("\ud840\udc00\ud840\udc01")]
-        public void TestMethod6a() {
-            
-         }
+        public void TestMethod6a() { }
     }
 }
