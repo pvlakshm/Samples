@@ -15,7 +15,7 @@ namespace NUnit.Tests5
         {
             // TODO: Add your test code here
             //Assert.Pass("Your first passing test");
-            Warn.If(true, "this is a warning");
+            //Warn.If(true, "this is a warning");
             Assert.Inconclusive();
         }
     }
