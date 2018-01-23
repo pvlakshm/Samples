@@ -170,3 +170,10 @@
 /NUnit.Tests5/.vs/NUnit.Tests5/v15/Server/sqlite3
 /NUnit.Tests5/NUnit.Tests5/obj/Debug
 /NUnit.Tests5/NUnit.Tests5/bin/Debug
+/InAssemblyParallel/packages
+/InAssemblyParallel/UTA4/bin/Release
+/InAssemblyParallel/UTA3/bin/Release
+/InAssemblyParallel/UTA2/bin/Release
+/InAssemblyParallel/UTA1/bin/Release
+/UWP_UT_testproject/UWP_UT_testproject
+/UWP_UT_testproject/.vs/UWP_UT_testproject/v15/Server/sqlite3
