@@ -44,5 +44,31 @@ namespace NUnit.Tests5
             //Warn.If(true, "this is a warning");
             Assert.Pass();
         }
+
+        [Test]
+        public void TestWarning()
+        {
+            Assert.Warn("this is a warning");
+        }
+
+        [Test]
+        public void TestWithMultipleAssertsAllPassing()
+        {
+            Assert.Multiple(() =>
+            {
+                Assert.AreEqual(5 + 5, 10);
+                Assert.AreEqual(5 + 5, 10);
+            });
+        }
+
+        [Test]
+        public void TestWithMultipleAssertsOneFailing()
+        {
+            Assert.Multiple(() =>
+            {
+                Assert.AreEqual(5 + 5, 11);
+                Assert.AreEqual(5 + 5, 10);
+            });
+        }
     }
 }
