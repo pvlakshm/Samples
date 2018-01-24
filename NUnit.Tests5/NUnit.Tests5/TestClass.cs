@@ -13,13 +13,14 @@ namespace NUnit.Tests5
         [Test]
         public void TestPass()
         {
-            //Warn.If(true, "this is a warning");
+            Console.WriteLine("Console.Writline Testname: TestPass");
             Assert.IsTrue(true);
         }
 
         [Test]
         public void TestWithMultipleAssertsAllPassing()
         {
+            Console.WriteLine("Console.Writline Testname: TestWithMultipleAssertsAllPassing");
             Assert.Multiple(() =>
             {
                 Assert.AreEqual(5 + 5, 10);
@@ -30,7 +31,7 @@ namespace NUnit.Tests5
         [Test]
         public void TestCutshortAsPass()
         {
-            //Warn.If(true, "this is a warning");
+            Console.WriteLine("Console.Writline Testname: TestCutshortAsPass");
             Assert.Pass();
         }
 
@@ -38,13 +39,14 @@ namespace NUnit.Tests5
         [Test]
         public void TestFail()
         {
-            //Warn.If(true, "this is a warning");
+            Console.WriteLine("Console.Writline Testname: TestFail");
             Assert.Fail();
         }
 
         [Test]
         public void TestWithMultipleAssertsTwoFailing()
         {
+            Console.WriteLine("Console.Writline Testname: TestWithMultipleAssertsTwoFailing");
             Assert.Multiple(() =>
             {
                 Assert.AreEqual(5 + 5, 11);
@@ -56,20 +58,21 @@ namespace NUnit.Tests5
         [Test]
         public void TestInconclusive()
         {
-            //Warn.If(true, "this is a warning");
+            Console.WriteLine("Console.Writline Testname: TestInconclusive");
             Assert.Inconclusive();
         }
 
         [Test]
         public void TestIgnore()
         {
-            //Warn.If(true, "this is a warning");
+            Console.WriteLine("Console.Writline Testname: TestIgnore");
             Assert.Ignore();
         }
 
         [Test]
         public void TestWarning()
         {
+            Console.WriteLine("Console.Writline Testname: TestWarning");
             Assert.Warn("this is a warning");
         }
     }
