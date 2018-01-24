@@ -23,7 +23,7 @@ namespace NUnit.Tests5
             Assert.Multiple(() =>
             {
                 Assert.AreEqual(5 + 5, 10);
-                Assert.AreEqual(5 + 5, 10);
+                Assert.AreEqual(5 * 2, 10);
             });
         }
 
@@ -49,6 +49,7 @@ namespace NUnit.Tests5
             {
                 Assert.AreEqual(5 + 5, 11);
                 Assert.AreEqual(5 + 5, 10);
+                Assert.AreEqual(5 + 5, 12);
             });
         }
 
