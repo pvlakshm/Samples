@@ -43,7 +43,7 @@ namespace NUnit.Tests5
         }
 
         [Test]
-        public void TestWithMultipleAssertsOneFailing()
+        public void TestWithMultipleAssertsTwoFailing()
         {
             Assert.Multiple(() =>
             {
