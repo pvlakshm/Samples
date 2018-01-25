@@ -13,7 +13,7 @@ namespace TIAsampleTest
         public void GetNameTest()
         {
             string name = target.GetName();
-            Assert.AreEqual("TIA_TIA", name);
+            Assert.AreEqual("TIA", name);
 
         }
     }

@@ -10,7 +10,7 @@ namespace TIAsample
     {
         public string GetName()
         {
-            return "TIA_TIA_TIA"
+            return "TIA";
 ;        }
     }
 }
