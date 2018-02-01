@@ -10,11 +10,11 @@ namespace NUnit2x
     {
         public int sum(int i, int j)
         {
-            //if (i == 0)
-            //    return j;
-            //else if (j == 0)
-            //    return i;
-            //else
+            if (i == 0)
+                return j;
+            else if (j == 0)
+                return i;
+            else
                 return i + j;
         }
     }
