@@ -177,3 +177,8 @@
 /InAssemblyParallel/UTA1/bin/Release
 /UWP_UT_testproject/UWP_UT_testproject
 /UWP_UT_testproject/.vs/UWP_UT_testproject/v15/Server/sqlite3
+/Win10_IoT_Core/.vs
+/Win10_IoT_Core/Win10_IoT_Core/obj
+/Win10_IoT_Core/Win10_IoT_Core/bin
+/Win10_IoT_Core/LED_Test/obj
+/Win10_IoT_Core/LED_Test/bin
