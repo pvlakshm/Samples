@@ -1,7 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Win10_IoT_Core;
-using Microsoft.VisualStudio.TestTools.UnitTesting.AppContainer;
 
 namespace UnitTestProject1
 {
