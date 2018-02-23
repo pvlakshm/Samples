@@ -10,7 +10,7 @@ namespace UnitTestProject1
     {
         private static LED led = new Win10_IoT_Core.LED();
 
-        [UITestMethod]
+        [TestMethod]
         public void TestMethodON()
         {
             // whatever be the current state, ON the LED
@@ -22,7 +22,7 @@ namespace UnitTestProject1
             Assert.IsTrue(bON);
         }
 
-        [UITestMethod]
+        [TestMethod]
         public void TestMethodOFF()
         {
             // whatever be the current state, OFF the LED
