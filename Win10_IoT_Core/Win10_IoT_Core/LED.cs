@@ -12,14 +12,10 @@ namespace Win10_IoT_Core
             InitGPIO();
         }
 
-        private void delay()
-        {
-            Task.Delay(1000).Wait();
-        }
-
         private bool InitGPIO()
         {
             const int LED_PIN = 5;
+
             var gpio = GpioController.GetDefault();
 
             if (gpio == null)
@@ -35,6 +31,7 @@ namespace Win10_IoT_Core
 
         public bool turnON()
         {
+            // Drive the pin to low to have current flow into the LED
             pin.Write(GpioPinValue.Low);
             return State();
         }
