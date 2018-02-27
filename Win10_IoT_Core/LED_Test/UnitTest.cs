@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Win10_IoT_Core;
 
@@ -14,7 +15,7 @@ namespace UnitTestProject1
         {
             // whatever be the current state, ON the LED
             led.turnON();
-
+            Task.Delay(3 * 1000).Wait();
             // get the state of the LED pin, and assert on it.
             var bON = led.State();
 
@@ -22,11 +23,15 @@ namespace UnitTestProject1
         }
 
         [TestMethod]
-        public void TestMethodOFF()
+        public void TestMethodBlinky()
         {
-            // whatever be the current state, OFF the LED
-            led.turnOFF();
-
+            for(int i=0; i<4; ++i)
+            {
+                led.turnON();
+                Task.Delay(500).Wait();
+                led.turnOFF();
+                Task.Delay(100).Wait();
+            }
             // get the state of the LED pin, and assert on it.
             var bON = led.State();
 
