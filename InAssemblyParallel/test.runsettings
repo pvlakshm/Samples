@@ -9,7 +9,7 @@
   <!-- MSTest adapter -->
   <MSTest>
     <Parallelize>
-      <Workers>4</Workers>
+      <Workers>1</Workers>
       <Scope>MethodLevel</Scope>
     </Parallelize>
   </MSTest>
