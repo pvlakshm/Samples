@@ -36,6 +36,7 @@ namespace Win10_IoT_Core
         public bool turnON()
         {
             pin.Write(GpioPinValue.Low);
+            Task.Delay(3 * 1000).Wait();
             return State();
         }
 
