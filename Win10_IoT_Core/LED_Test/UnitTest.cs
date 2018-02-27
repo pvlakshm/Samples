@@ -16,6 +16,7 @@ namespace UnitTestProject1
             // whatever be the current state, ON the LED
             led.turnON();
             Task.Delay(3 * 1000).Wait();
+
             // get the state of the LED pin, and assert on it.
             var bON = led.State();
 
@@ -23,15 +24,17 @@ namespace UnitTestProject1
         }
 
         [TestMethod]
-        public void TestMethodBlinky()
+        public void TestMethodBlink()
         {
-            for(int i=0; i<4; ++i)
+            for (int i = 0; i < 4; ++i)
             {
                 led.turnON();
                 Task.Delay(500).Wait();
+
                 led.turnOFF();
                 Task.Delay(100).Wait();
             }
+
             // get the state of the LED pin, and assert on it.
             var bON = led.State();
 
