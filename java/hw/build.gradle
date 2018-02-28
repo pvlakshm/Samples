@@ -28,3 +28,18 @@ repositories {
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
 }
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/main'
+        }
+    }
+
+    test {
+        java {
+            srcDir 'src/test'  // Note @Peter's comment below
+        }
+    }
+
+}
