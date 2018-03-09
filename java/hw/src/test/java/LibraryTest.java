@@ -13,15 +13,15 @@ public class LibraryTest
 {
 
     @Test
-    public void testSomeLibraryMethod()
+    public void addTest()
     {
 
         int x = 5;
         int y = 6;
         int sum = 11;
 
-        Library classUnderTest = new Library();
-        int res = classUnderTest.someLibraryMethod(x, y);
+        Library l = new Library();
+        int res = l.add(x, y);
  
        assertEquals(sum, res);
 
