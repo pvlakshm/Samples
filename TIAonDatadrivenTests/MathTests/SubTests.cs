@@ -8,7 +8,7 @@ namespace MathTests
     public class SubTests
     {
         [TestMethod]
-        public void stmint()
+        public void stm_int()
         {
             int x = 2;
             int y = 3;
@@ -19,7 +19,7 @@ namespace MathTests
         }
 
         [TestMethod]
-        public void stmfloat()
+        public void stm_float()
         {
             float x = 2.0f;
             float y = 3.0f;

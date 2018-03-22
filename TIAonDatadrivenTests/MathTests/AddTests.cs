@@ -8,7 +8,7 @@ namespace MathTests
     public class AddTests
     {
         [TestMethod]
-        public void atmint()
+        public void atm_int()
         {
             int x = 2;
             int y = 3;
@@ -19,7 +19,7 @@ namespace MathTests
         }
 
         [TestMethod]
-        public void atmfloat()
+        public void atm_float()
         {
             float x = 2.0f;
             float y = 3.0f;

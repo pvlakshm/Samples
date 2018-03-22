@@ -11,7 +11,7 @@ namespace MathTests
         [DataRow(2, 3, 5)]
         [DataRow(2, 4, 6)]
         [DataRow(2, 5, 7)]
-        public void ddatmint(int x, int y, int sum)
+        public void dd_atm_int(int x, int y, int sum)
         {
             int res = new Math.Adder().add(x, y);
             Assert.AreEqual(sum, res);
@@ -22,7 +22,7 @@ namespace MathTests
         [DataRow(2.0f, 3.0f, 5.0f)]
         [DataRow(2.0f, 4.0f, 6.0f)]
         [DataRow(2.0f, 5.0f, 7.0f)]
-        public void ddatmfloat(float x, float y, float sum)
+        public void dd_atm_float(float x, float y, float sum)
         {
             float res = new Math.Adder().add(x, y);
             Assert.AreEqual(sum, res);
