@@ -15,6 +15,6 @@ public class AddTest {
     @Test
     public void testAdd_int()
 	{
-        assertEquals(2, underTest.add_int(1, 1));
+        assertEquals(2, underTest.Add_int(1, 1));
     }
 }
