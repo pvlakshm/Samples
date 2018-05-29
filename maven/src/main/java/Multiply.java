@@ -9,7 +9,7 @@ public class Multiply {
 
 		for (int i = 1; i < b; i++)
 		{
-			runningTotal =+ a.Add_int(runningTotal, a)
+			runningTotal =+ a.Add_int(runningTotal, a);
 		}
 
         return runningTotal;
