@@ -10,7 +10,7 @@ Introducing code coverage for tests targeting .Net Core (Windows). Refer the fol
 3. Open powershell/cmd to run following commands.
     1. Create a directory. Example: D:\sample-projects\sample.Tests and "cd" to it.
     2. `dotnet new mstest`
-    3. `dotnet add package Microsoft.NET.Test.SDK --version 15.8.0-preview-20180610-02 --source https://dotnet.myget.org/F/vstest/api/v3/index.json`
+    3. `dotnet add package Microsoft.NET.Test.SDK --version 15.8.0-preview-20180610-02
     4. `dotnet test –collect “Code coverage”`
     5. Open .coverage file in VS Enterprise to see the coverage info.
 
