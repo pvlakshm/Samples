@@ -1,7 +1,7 @@
 # .NET Core Sample for code coverage
 Introducing code coverage for tests targeting .Net Core (Windows). Refer the following:
 - [vstest RFC 0021 - Code Coverage for .NET Core](https://github.com/Microsoft/vstest-docs/blob/master/RFCs/0021-CodeCoverageForNetCore.md)
-- [vstest Issue: Add support for dotnet test --collect:"Code Coverage"](https://github.com/Microsoft/vstest/issues/981)
+- [vstest Issue #981: Add support for dotnet test --collect:"Code Coverage"](https://github.com/Microsoft/vstest/issues/981)
 
 ## Try out code coverage for yourself
 ### For an MSTestV2 based test project targeting .NET Core
