@@ -14,7 +14,7 @@ Introducing code coverage for tests targeting .Net Core (Windows). Refer the fol
     4. `dotnet test –collect “Code coverage”`
     5. Open .coverage file in VS Enterprise to see the coverage info.
 
-### On the solution in this repo
+### On the solution in this repo (MSTestV2 + xUnit.net + NUnit)
 The solution in this repo has 3 test projects (using MSTestV2, xUnit.net and NUnit)
 The references have alreaday been updated as called out in the step 3.3 above.
 
