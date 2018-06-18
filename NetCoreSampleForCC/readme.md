@@ -10,8 +10,10 @@ Introducing code coverage for tests targeting .Net Core (Windows). Refer the fol
     1. Create a directory. Example: D:\sample-projects\sample.Tests and "cd" to it.
     2. `dotnet new mstest`
     3. `dotnet add package Microsoft.NET.Test.SDK --version 15.8.0-preview-20180610-02`
-    4. `dotnet test –-collect “Code coverage”`
+    4. `dotnet test –-collect "Code coverage"`
     5. Open .coverage file in VS Enterprise to see the coverage info.
+
+Note: in step (iv) above, you can also use `dotnet test –-collect "code coverage"` (with the lower case 'c').
 
 ### On the solution in this repo (MSTestV2 + xUnit.net + NUnit)
 The solution in this repo has 3 test projects (using MSTestV2, xUnit.net and NUnit)
