@@ -1,3 +1,5 @@
+## Repro for NUnit3-vs-adapter [#519](https://github.com/nunit/nunit3-vs-adapter/issues/519)
+
 The sln contains 3 unit test projects (NUnit, MSTest, xUnit.net) which just 1 bolier plate test method in each.
 There is also a runsettings file with "UseVerifiableInstrumentation" set to False.
 
