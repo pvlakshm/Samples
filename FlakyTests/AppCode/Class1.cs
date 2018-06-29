@@ -8,7 +8,7 @@ namespace AppCode
 {
     public class Class1
     {
-        public int add(int x, int y)
+        public int addFlaky(int x, int y)
         {
             int r = new System.Random().Next(3);
 
@@ -16,6 +16,12 @@ namespace AppCode
             int randSum = sum + r;
 
             return randSum;
+        }
+
+        public int add(int x, int y)
+        {
+            int sum = x + y;
+            return sum;
         }
     }
 }
