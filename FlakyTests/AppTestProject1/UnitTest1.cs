@@ -44,10 +44,12 @@ namespace AppTestProject1
         [DataRow(2, 2, 4)]
         [DataRow(3, 2, 5)]
         [DataRow(4, 2, 6)]
+        [DataRow(6, 2, 8)]
         public void TestMethod4(int x, int y, int sum)
         {
             int val = new AppCode.Class1().add(x, y);
             Assert.AreEqual(sum, val);
         }
+
     }
 }
