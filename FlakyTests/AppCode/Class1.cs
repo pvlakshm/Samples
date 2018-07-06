@@ -10,12 +10,17 @@ namespace AppCode
     {
         public int addFlaky(int x, int y)
         {
-            int r = new System.Random().Next(3);
 
+            //compute the actual sum.
+            // then genereate a random number below 1000. If that number is odd, then add 1 to the sum.
+            // return the sum
             int sum = x + y;
-            int randSum = sum + r;
 
-            return randSum;
+            int r = new System.Random().Next(1000);
+            r = r % 2;
+            sum += r;
+
+            return sum;
         }
 
         public int add(int x, int y)
