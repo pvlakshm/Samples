@@ -7,8 +7,9 @@ namespace AppTestProject1
     public class UnitTest1
     {
         [TestMethod]
-        public void TestAddFlaky()
+        public void TestIsFlakyCozSUTisFalky()
         {
+            // this test is flaky because the SUT is flaky.
             int x = 3;
             int y = 4;
             int sum = 7;
@@ -17,35 +18,29 @@ namespace AppTestProject1
             Assert.AreEqual(sum, val);
         }
 
+
+        private static int state = new System.Random().Next(2);
+
         [TestMethod]
-        public void TestAdd()
+        public void TestIsFlakyCozEnvIsFlaky()
         {
-            int x = 3;
-            int y = 4;
-            int sum = 7;
-
-            int val = new AppCode.Class1().add(x, y);
-            Assert.AreEqual(sum, val);
+            // this test is flaky because the environment is flaky
+            Assert.AreEqual(state, 0);
         }
 
-        [DataTestMethod]
-        [DataRow(2, 2, 4)]
-        [DataRow(3, 2, 5)]
-        [DataRow(4, 2, 6)]
-        public void DatadrivenTestAddFlaky(int x, int y, int sum)
+        private static bool parentRan = false;
+
+        [TestMethod]
+        public void parentTest()
         {
-            int val = new AppCode.Class1().add(x, y);
-            Assert.AreEqual(sum, val);
+            parentRan = true;
+            Assert.IsTrue(true);
         }
 
-        [DataTestMethod]
-        [DataRow(2, 2, 4)]
-        [DataRow(3, 2, 5)]
-        [DataRow(4, 2, 6)]
-        public void DatadrivenTestAdd(int x, int y, int sum)
+        [TestMethod]
+        public void TestIsFlakyCozOfOrderOfExecution()
         {
-            int val = new AppCode.Class1().add(x, y);
-            Assert.AreEqual(sum, val);
+            Assert.IsTrue(parentRan);
         }
     }
 }
