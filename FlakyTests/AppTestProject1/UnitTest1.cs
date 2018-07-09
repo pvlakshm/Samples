@@ -18,7 +18,6 @@ namespace AppTestProject1
             Assert.AreEqual(sum, val);
         }
 
-
         private static int state = new System.Random().Next(2);
 
         [TestMethod]
