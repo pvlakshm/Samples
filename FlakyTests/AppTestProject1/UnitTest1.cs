@@ -31,7 +31,7 @@ namespace AppTestProject1
         private static bool parentRan = false;
 
         [TestMethod]
-        public void parentTest()
+        public void parentTest_shouldAlwaysPass()
         {
             parentRan = true;
             Assert.IsTrue(true);
