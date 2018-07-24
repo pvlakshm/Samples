@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27906.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitCoverageFile", "SplitCoverageFile\SplitCoverageFile.csproj", "{05CB8A53-B0F3-48CC-B90F-FC25B65538A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05CB8A53-B0F3-48CC-B90F-FC25B65538A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05CB8A53-B0F3-48CC-B90F-FC25B65538A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05CB8A53-B0F3-48CC-B90F-FC25B65538A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05CB8A53-B0F3-48CC-B90F-FC25B65538A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5008367-9511-4511-9C2B-A37C29F7B642}
+	EndGlobalSection
+EndGlobal
