@@ -2,22 +2,20 @@
 Introducing code coverage for tests targeting .Net Core (Windows). Refer the following:
 - [vstest RFC 0021 - Code Coverage for .NET Core](https://github.com/Microsoft/vstest-docs/blob/master/RFCs/0021-CodeCoverageForNetCore.md)
 - [vstest Issue #981: Add support for dotnet test --collect:"Code Coverage"](https://github.com/Microsoft/vstest/issues/981)
+This capability is available in the Test Plaform starting from Microsoft.NET.Test.Sdk (15.8.0) onwards.
 
-## Try out code coverage for yourself
-### For an MSTestV2 based test project targeting .NET Core
-1. Download "dotnet core sdk" from `https://dotnetcli.blob.core.windows.net/dotnet/Sdk/2.1.400-preview-008975/dotnet-sdk-2.1.400-preview-008975-win-x64.exe`, and install it.
-2. Open powershell/cmd to run following commands.
-    1. Create a directory. Example: D:\sample-projects\sample.Tests and "cd" to it.
-    2. `dotnet new mstest`
-    3. `dotnet add package Microsoft.NET.Test.SDK --version 15.8.0-preview-20180610-02`
-    4. `dotnet test –-collect "Code coverage"`
-    5. Open .coverage file in VS Enterprise to see the coverage info.
+## This sample solution
+This solution is a sample ilustrating code coverage collection for code targeting .NET Core.
+- MathLib: system under test targeting netcoreapp2.1
+- MSTestV2TestProject: test project using MSTest V2 (v1.3.2), and targeting netcoreapp2.1
+- NUnit3TestProject: test project using NUnit (v3.10.0), and targeting netcoreapp2.1
+- xUnitTestProject: test project using xUnit (v2.4.0), and targeting netcoreapp2.1
 
-Note: in step (iv) above, you can also use `dotnet test –-collect "code coverage"` (with the lower case 'c').
+### Code Coverage from within Visual Studio
+1. Build the solution
+2. Select all the tests in the Test Explorer, and invoke the "Analyze Code Coverage for Selected Tests" menu command.
 
-### On the solution in this repo (MSTestV2 + xUnit.net + NUnit)
-The solution in this repo has 3 test projects (using MSTestV2, xUnit.net and NUnit)
-The references have alreaday been updated as called out in the step 2.iii above.
-
-Go to each folder within `Tests` and run the following command to generate code coverage data:
-`dotnet test –collect "Code coverage"`
+### Code Coverage from CLI
+Go to each of the Test folders folder within `Tests` and run the following command to generate code coverage data:
+1. `dotnet test –collect "Code coverage"` [you can `"code coverage"` (with the lower case 'c').]
+2. Open .coverage file in VS Enterprise to see the coverage info.
