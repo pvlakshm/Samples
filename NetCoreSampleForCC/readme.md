@@ -13,9 +13,9 @@ This solution is a sample ilustrating code coverage collection for code targetin
 
 ### Code Coverage from within Visual Studio
 1. Build the solution
-2. Select all the tests in the Test Explorer, and invoke the "Analyze Code Coverage for Selected Tests" menu command.
+2. Select all the tests in the Test Explorer, and invoke the "Analyze Code Coverage for Selected Tests" menu command
 
 ### Code Coverage from CLI
 Go to each of the Test folders folder within `Tests` and run the following command to generate code coverage data:
-1. `dotnet test –collect "Code coverage"` [you can `"code coverage"` (with the lower case 'c').]
-2. Open .coverage file in VS Enterprise to see the coverage info.
+1. `dotnet test –collect "Code coverage"` [you can also use `"code coverage"` (with the lower case 'c').]
+2. Open the generated `.coverage` file in VS Enterprise to see the coverage info.
