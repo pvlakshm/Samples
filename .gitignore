@@ -183,3 +183,10 @@
 /Win10_IoT_Core/LED_Test/obj
 /Win10_IoT_Core/LED_Test/bin
 /Win10_IoT_Core/LED_Test/LED_Test.csproj.user
+/NetCoreSampleForCC/.vs/NetCoreSampleForCC/v15/Server/sqlite3
+/NetCoreSampleForCC/xUnitTestProject/obj
+/NetCoreSampleForCC/Tests
+/NetCoreSampleForCC/NUnit3TestProject/obj
+/NetCoreSampleForCC/NetCoreSampleForCC/obj
+/NetCoreSampleForCC/MSTestV2TestProject/obj
+/NetCoreSampleForCC/.vs/NetCoreSampleForCC
