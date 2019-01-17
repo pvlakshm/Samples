@@ -1,2 +1,2 @@
 # Samples
-Sample code for various features
+Sample code for various features.
