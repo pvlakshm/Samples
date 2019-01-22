@@ -6,10 +6,10 @@ This capability is available in the Test Plaform starting from Microsoft.NET.Tes
 
 ## This sample solution
 This solution is a sample ilustrating code coverage collection for code targeting .NET Core.
-- MathLib: system under test targeting netcoreapp2.1
-- MSTestV2TestProject: test project using MSTest V2 (v1.3.2), and targeting netcoreapp2.1
-- NUnit3TestProject: test project using NUnit (v3.10.0), and targeting netcoreapp2.1
-- xUnitTestProject: test project using xUnit (v2.4.0), and targeting netcoreapp2.1
+- [NetCoreSampleForCC](./NetCoreSampleForCC): system under test (MathLib)targeting netcoreapp2.1
+- [MSTestV2TestProject](./MSTestV2TestProject): test project using MSTest V2 (v1.3.2), and targeting netcoreapp2.1
+- [NUnit3TestProject](./NUnit3TestProject): test project using NUnit (v3.10.0), and targeting netcoreapp2.1
+- [xUnitTestProject](./xUnitTestProject): test project using xUnit (v2.4.0), and targeting netcoreapp2.1
 
 ### Code Coverage from within Visual Studio
 1. Build the solution
