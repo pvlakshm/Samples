@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace DataDrivenTests
 {
-    [TestClass]
+    // this is a helper class that serves to provide the data for the data driven tests.
     public class DynamicTestDataProvider
     {
         public static IEnumerable<object[]> GetDataMethod()
         {
-            yield return new object[] { 1, 2, 3 };
+            yield return new object[] { 1, 2, int.Parse("3") };
         }
 
         public static IEnumerable<object[]> GetDataProperty
@@ -21,7 +21,7 @@ namespace DataDrivenTests
             {
                 return new[]
                 {
-                    new object[] { 1, 2, 3 }
+                    new object[] { 1, 2, int.Parse("3") }
                 };
             }
         }
@@ -30,6 +30,8 @@ namespace DataDrivenTests
     [TestClass]
     public class DynamicDataDrivenTest
     {
+        // The DynamicData attribute can be used in the cases where the data is complex / dynamically computed.
+        // The attribute allows you to get the parameter values from a method or a property
         [DataTestMethod]
         [DynamicData("GetDataMethod", typeof(DynamicTestDataProvider), DynamicDataSourceType.Method)]
         public void TestMethod1(int x, int y, int sum)
