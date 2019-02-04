@@ -10,8 +10,9 @@ namespace AppCode
     {
         public int addFlaky(int x, int y)
         {
-
-            //compute the actual sum.
+            // Here, this business logic itself is flaky.
+            //
+            // compute the actual sum.
             // then genereate a random number below 1000. If that number is odd, then add 1 to the sum.
             // return the sum
             int sum = x + y;
@@ -23,7 +24,7 @@ namespace AppCode
             return sum;
         }
 
-        public int add(int x, int y)
+        public int addStable(int x, int y)
         {
             int sum = x + y;
             return sum;
