@@ -4,6 +4,8 @@ using AttributeEx;
 
 namespace AttributeExTests
 {
+    // these are test methods annotated with the attribute extensions. The intent is to visually validate
+    // how they show up in the various Visual Studio Test Explorer interactions.
     [TestClass]
     public class UnitTest1
     {
