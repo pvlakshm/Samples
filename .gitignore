@@ -190,3 +190,7 @@
 /NetCoreSampleForCC/NetCoreSampleForCC/obj
 /NetCoreSampleForCC/MSTestV2TestProject/obj
 /NetCoreSampleForCC/.vs/NetCoreSampleForCC
+/DataDrivenTests/.vs/DataDrivenTests/v16/Server/sqlite3
+/DataDrivenTests/packages
+/DataDrivenTests/DataDrivenTests/obj/Debug
+/DataDrivenTests/DataDrivenTests/bin/Debug
