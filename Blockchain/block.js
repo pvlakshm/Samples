@@ -24,6 +24,7 @@ class Block {
         const timestamp = Date.now();
         const lastHash = lastBlock.hash;
         const hash = Block.hash(timestamp, lastHash, data);
+        const hash = 'todo-hash';
 
         return new this(timestamp, lastHash, hash, data);
     }
