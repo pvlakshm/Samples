@@ -25,6 +25,8 @@ class Block {
 
         return new this(timestamp, lastHash, hash, data);
     }
+
+    
 }
 
 module.exports = Block;
