@@ -5,11 +5,11 @@ VisualStudioVersion = 15.0.27729.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathLib", "NetCoreSampleForCC\MathLib.csproj", "{53A92E7C-16AA-4DDC-996C-7E60612C86B9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSTestV2TestProject1", "Tests\MSTestV2TestProject1\MSTestV2TestProject1.csproj", "{83C2136C-A60C-4187-80A2-04EC2B1074B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSTestV2TestProject", "MSTestV2TestProject\MSTestV2TestProject.csproj", "{83C2136C-A60C-4187-80A2-04EC2B1074B9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTestProject1", "Tests\XUnitTestProject1\XUnitTestProject1.csproj", "{8D02E865-8DBA-48B6-97B5-7DB275A9439E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTestProject", "XUnitTestProject\XUnitTestProject.csproj", "{8D02E865-8DBA-48B6-97B5-7DB275A9439E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTestProject1", "Tests\NUnitTestProject1\NUnitTestProject1.csproj", "{BB3F3ED7-6E45-4DC7-B8CA-AE811645772C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnit3TestProject", "NUnit3TestProject\NUnit3TestProject.csproj", "{BB3F3ED7-6E45-4DC7-B8CA-AE811645772C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EFB48260-6853-4DB9-B54B-2F03B323B751}"
 	ProjectSection(SolutionItems) = preProject
